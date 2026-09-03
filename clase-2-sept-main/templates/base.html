@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Mi Proyecto{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <nav>
+        <ul>
+            <li><a href="{% url 'inicio:index' %}">Inicio</a></li>
+        </ul>
+    </nav>
+        <main>
+            {% block content %}
+
+            
+            {% endblock %}
+        </main>
+    <footer>
+        <p>&copy; 2023 Mi Proyecto</p>
+    </footer>
+</body>
+</html>
