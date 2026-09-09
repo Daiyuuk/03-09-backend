@@ -1,6 +1,11 @@
 body {
     font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #225560;
 }
+
 
 nav ul {
     list-style-type: none;
@@ -15,4 +20,10 @@ nav ul li {
 footer {
     margin-top: 20px;
     text-align: center;
+    color: #F1ECEC;
+}
+
+.centrado{
+    text-align: center;
+    color: #F1ECEC;
 }

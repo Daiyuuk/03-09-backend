@@ -58,7 +58,7 @@ import os
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],  # Directorio donde buscar plantillas
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
