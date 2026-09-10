@@ -1,3 +1,4 @@
+
 """
 URL configuration for django_templates project.
 
@@ -14,14 +15,15 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.contrib import admin
-from django.urls import path, include
 
+from django.contrib.admindocs import views
+from django.urls import path
+from . import views
+
+
+app_name = 'app2'
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('inicio.urls')),
-    path('app1/', include('app1.urls')),
-    path('app2/', include('app2.urls')),
-
+    path('vista1/', views.vista1_app2, name='vista1_app2'),
+    path('vista2/', views.vista2_app2, name='vista2_app2'),
 ]
